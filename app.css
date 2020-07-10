@@ -1,3 +1,10 @@
+@import "preflight.css";
+@import "fonts/inter.css";
+
+html {
+  font-family: "Inter var", sans-serif;
+}
+
 body {
   background-color: lightblue;
 }
