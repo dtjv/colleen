@@ -65,13 +65,43 @@ html {
 
 /* small screens */
 @media (min-width: 640px) {
+  .hero-content {
+    padding: 6rem 3rem;
+  }
+
+  .hero-head {
+    font-size: 3rem;
+  }
+
+  .hero-lead {
+    font-size: 1.25rem;
+  }
+
+  .hero-text {
+    font-size: 1.125rem;
+  }
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+  .hero-head {
+    font-size: 3.25rem;
+  }
+
+  .hero-lead {
+    font-size: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* large screens */
+@media (min-width: 1024px) {
   .hero-content,
   .hero-image {
     width: 50%;
-  }
-
-  .hero-content {
-    padding: 6rem 3rem;
   }
 
   .hero-image {
@@ -90,26 +120,6 @@ html {
     object-fit: cover;
     object-position: top;
   }
-
-  .hero-head {
-    font-size: 3rem;
-  }
-
-  .hero-lead {
-    font-size: 1.25rem;
-  }
-
-  .hero-text {
-    font-size: 1.125rem;
-  }
-}
-
-/* medium screens */
-@media (min-width: 768px) {
-}
-
-/* large screens */
-@media (min-width: 1024px) {
 }
 
 /* extra large screens */
