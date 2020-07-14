@@ -1,0 +1,116 @@
+@import "preflight.css";
+@import "../fonts/inter.css";
+
+:root {
+  /* colors */
+  --primary-color: lightblue;
+  --secondary-color: #eeefff;
+  /* fonts */
+  --font-family: "Inter var", sans-serif;
+  /* borders */
+  /* breakpoints */
+  /* spacing */
+}
+
+/* mobile screens */
+html {
+  font-family: var(--font-family);
+}
+
+
+
+.section-image {
+  display: none;
+}
+
+.divider {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.divider div {
+  width: 100%;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.content section {
+  padding: 2rem 1rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-row h3,
+.section-head h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #38a169;
+}
+
+.section-body {
+  margin-top: 1.5rem;
+  color: #2d3748;
+}
+
+.section-row p {
+  margin-top: 1.5rem;
+  color: #2d3748;
+}
+
+/* small screens */
+@media (min-width: 640px) {
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+  .content section {
+    display: flex;
+    padding: 3.5rem;
+  }
+
+  .section-with-image {
+    display: flex;
+  }
+
+  .pl-8 {
+    padding-left: 2rem;
+  }
+
+  .section-image {
+    display: block;
+    width: 75%;
+  }
+
+  .divider {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .section-head,
+  .section-body {
+    width: 50%;
+  }
+
+  .section-body {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+/* large screens */
+@media (min-width: 1024px) {
+}
+
+/* extra large screens */
+@media (min-width: 1280px) {
+}
