@@ -10,19 +10,26 @@ $secondary-lite: #ed8936 !default;
 $white: #ffffff !default;
 $black: #000000 !default;
 
-$bg-lite: #f7fafc !default;
-$bg-base: #edf2f7 !default; /* light gray */
-$bg-dark: #e2e8f0 !default;
+$gray-100: #f7fafc !default;
+$gray-200: #edf2f7 !default;
+$gray-300: #e2e8f0 !default;
 
-$text-lite: #718096 !default;
-$text-base: #4a5568 !default; /* dark gray */
-$text-dark: #2d3748 !default;
+$gray-600: #718096 !default;
+$gray-700: #4a5568 !default;
+$gray-800: #2d3748 !default;
 
 // -----------------------------------------------------------------------------
 // fonts
 // -----------------------------------------------------------------------------
 $font-family: "Inter var", sans-serif !default;
 $font-family-fallback: "Inter", sans-serif !default;
+
+// color
+$text-lite: $gray-600 !default;
+$text-base: $gray-700 !default;
+$text-dark: $gray-800 !default;
+$text-primary: $primary !default;
+$text-secondary: $secondary !default;
 
 // font-weight
 $text-normal: 400 !default;
@@ -50,6 +57,17 @@ $leading-snug: 1.375 !default;
 $leading-normal: 1.5 !default;
 $leading-relaxed: 1.625 !default;
 $leading-loose: 2 !default;
+
+// -----------------------------------------------------------------------------
+// backgrounds
+// -----------------------------------------------------------------------------
+$bg-lite: $gray-100 !default;
+$bg-base: $gray-200 !default;
+$bg-dark: $gray-300 !default;
+$bg-primary: $primary !default;
+$bg-secondary: $secondary !default;
+$bg-primary-lite: $primary-lite !default;
+$bg-secondary-lite: $secondary-lite !default;
 
 // -----------------------------------------------------------------------------
 // borders

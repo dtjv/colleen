@@ -1,13 +1,16 @@
 .hero {
-  display: flex;
+  margin-top: $sz-6;
 }
 
 .hero-content {
   display: flex;
+}
+
+.hero-block {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding-top: $sz-4;
 }
 
 .hero-head {
@@ -18,13 +21,13 @@
 }
 
 .hero-lead {
-  color: $primary;
+  color: $text-primary;
   font-size: $text-lg;
   font-weight: $text-semibold;
 }
 
 .hero-text {
-  color: $secondary;
+  color: $text-secondary;
   font-size: $sz-4;
   font-weight: $text-normal;
   margin-top: $sz-2;
@@ -35,7 +38,7 @@
 }
 
 @media (min-width: $breakpoint-sm) {
-  .hero-content {
+  .hero-block {
     padding: $sz-16 $sz-4;
   }
 
@@ -52,8 +55,11 @@
   }
 }
 
-/* medium screens */
 @media (min-width: $breakpoint-md) {
+  .hero {
+    margin-top: $sz-4;
+  }
+
   .hero-head {
     font-size: $text-6xl;
   }
@@ -67,9 +73,12 @@
   }
 }
 
-/* large screens */
 @media (min-width: $breakpoint-lg) {
   .hero {
+    margin-top: $sz-8;
+  }
+
+  .hero-content {
     height: 400px;
   }
 
@@ -77,7 +86,7 @@
     font-size: $text-5xl;
   }
 
-  .hero-content,
+  .hero-block,
   .hero-image {
     width: 50%;
   }
@@ -97,5 +106,10 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .hero-head {
+    font-size: $text-6xl;
   }
 }
