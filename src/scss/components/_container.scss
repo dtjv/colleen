@@ -1,0 +1,30 @@
+html {
+  font-family: $font-family-fallback;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: $font-family;
+  }
+}
+
+.container {
+  background-color: $white;
+  margin: 0 auto;
+  padding: $sz-12 $sz-4;
+  /* height: 100vh  ?? */
+}
+
+@media (min-width: $breakpoint-sm) {
+  .container {
+    padding-left: $sz-8;
+    padding-right: $sz-8;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .container {
+    padding-left: $sz-12;
+    padding-right: $sz-12;
+  }
+}

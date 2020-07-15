@@ -1,0 +1,17 @@
+{
+  "name": "cv-ui",
+  "version": "1.0.0",
+  "description": "An updated UI design for a personal website",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,scss,md}'",
+    "build": "sass src/scss/app.scss:src/css/app.css",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "David J. Valles <davidtjvalles@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "4.14.1",
+    "prettier": "2.0.5"
+  }
+}
