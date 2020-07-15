@@ -1,11 +1,8 @@
 .nav {
-  background-color: $bg-lite;
   display: flex;
-  height: $sz-16;
+  height: $sz-24;
   justify-content: space-between;
   margin: 0 auto;
-  padding-left: $sz-4;
-  padding-right: $sz-4;
 }
 
 .nav-block {
@@ -53,21 +50,9 @@
   outline: 0;
 }
 
-/* small screens */
 @media (min-width: $breakpoint-sm) {
-  .nav {
-    padding-left: $sz-8;
-    padding-right: $sz-8;
-  }
   .nav-link,
   .nav-avatar {
     margin-left: $sz-4;
-  }
-}
-
-@media (min-width: $breakpoint-md) {
-  .nav {
-    padding-left: $sz-12;
-    padding-right: $sz-12;
   }
 }

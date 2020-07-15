@@ -11,7 +11,8 @@ html {
 .container {
   background-color: $white;
   margin: 0 auto;
-  padding: $sz-12 $sz-4;
+  padding-left: $sz-4;
+  padding-right: $sz-4;
   /* height: 100vh  ?? */
 }
 
