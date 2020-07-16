@@ -1,0 +1,88 @@
+.portfolio {
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+}
+
+.portfolio-block h3 {
+  font-size: $text-3xl;
+  font-weight: $text-bold;
+  color: $text-dark;
+  line-height: $leading-none;
+}
+
+.portfolio-block p {
+  font-size: $text-md;
+  font-weight: $text-normal;
+  color: $text-base;
+  margin-top: $sz-6;
+}
+
+.portfolio-articles article {
+  padding-top: $sz-6;
+  padding-bottom: $sz-6;
+}
+
+article .type {
+  text-transform: uppercase;
+  font-size: $text-sm;
+  font-weight: $text-medium;
+  color: $text-secondary;
+}
+
+article > h4 {
+  font-size: $text-2xl;
+  font-weight: $text-bold;
+  line-height: $leading-tight;
+  margin-top: $sz-2;
+}
+
+.description {
+  margin-top: $sz-4;
+  font-size: $text-md;
+  font-weight: $text-normal;
+  color: $text-base;
+}
+
+article a {
+  display: block;
+  color: $text-primary;
+  margin-top: $sz-4;
+}
+
+article a:hover {
+  color: $text-primary-lite;
+}
+
+@media (min-width: $breakpoint-md) {
+  .portfolio {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+
+  .portfolio-block h3 {
+    font-size: $text-4xl;
+  }
+
+  .portfolio-articles article {
+    padding-top: $sz-8;
+    padding-bottom: $sz-8;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .portfolio-block {
+    text-align: center;
+  }
+
+  .portfolio-articles article {
+    padding-top: $sz-10;
+    padding-bottom: $sz-10;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .portfolio-articles article {
+    padding-top: $sz-12;
+    padding-bottom: $sz-12;
+  }
+}

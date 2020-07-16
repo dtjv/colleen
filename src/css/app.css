@@ -955,6 +955,74 @@ section:first-child {
   section {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
+.portfolio {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.portfolio-block h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1; }
+
+.portfolio-block p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5568;
+  margin-top: 1.5rem; }
+
+.portfolio-articles article {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+article .type {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #c05621; }
+
+article > h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0.5rem; }
+
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5568; }
+
+article a {
+  display: block;
+  color: #38a169;
+  margin-top: 1rem; }
+
+article a:hover {
+  color: #68d391; }
+
+@media (min-width: 768px) {
+  .portfolio {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+
+  .portfolio-block h3 {
+    font-size: 2.25rem; }
+
+  .portfolio-articles article {
+    padding-top: 2rem;
+    padding-bottom: 2rem; } }
+@media (min-width: 1024px) {
+  .portfolio-block {
+    text-align: center; }
+
+  .portfolio-articles article {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; } }
+@media (min-width: 1280px) {
+  .portfolio-articles article {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
 .price {
   background-color: #f7f9ea;
   padding-top: 2rem;
