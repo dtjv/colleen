@@ -1,0 +1,62 @@
+.contact {
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+}
+
+.contact-block > h3 {
+  font-size: $text-3xl;
+  font-weight: $text-bold;
+  color: $text-dark;
+  line-height: $leading-none;
+}
+
+.contact-block > p {
+  font-size: $text-md;
+  font-weight: $text-normal;
+  color: $text-base;
+  margin-top: $sz-6;
+}
+
+form {
+  margin-top: $sz-4;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  border-radius: $rounded;
+  appearance: none;
+  border-width: 2px;
+  line-height: $leading-tight;
+  color: $text-base;
+  padding-left: $sz-4;
+  padding-right: $sz-4;
+  padding-top: $sz-2;
+  padding-bottom: $sz-2;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+  outline: 0;
+  border-color: $bg-secondary;
+}
+
+@media (min-width: $breakpoint-md) {
+  .contact {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+
+  .contact-content {
+    display: flex;
+  }
+
+  .contact-block {
+    width: 50%;
+  }
+
+  form {
+    margin-top: 0;
+  }
+}

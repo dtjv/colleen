@@ -1,0 +1,28 @@
+.btn-wrapper {
+  margin-top: $sz-10;
+}
+
+.btn {
+  display: block;
+  font-size: $sz-4;
+  font-weight: $text-semibold;
+  border-radius: $rounded-lg;
+  color: white;
+  background-color: $bg-secondary;
+  padding: $sz-3 $sz-4;
+  width: 100%;
+  line-height: $sz-6;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background-color: $bg-secondary-lite;
+}
