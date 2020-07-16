@@ -13,7 +13,7 @@ html {
   margin: 0 auto;
   padding-left: $sz-4;
   padding-right: $sz-4;
-  /* height: 100vh  ?? */
+  max-width: 1350px;
 }
 
 @media (min-width: $breakpoint-sm) {
