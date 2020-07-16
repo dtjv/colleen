@@ -519,6 +519,7 @@ video {
 
 /* green */
 /* orange */
+/* pale green */
 .text-secondary {
   color: #c05621 !important; }
 
@@ -736,7 +737,7 @@ html {
   .hero-head {
     font-size: 4rem; } }
 .mkt {
-  background-color: #f7fafc;
+  background-color: #f7f9ea;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
@@ -883,5 +884,125 @@ section:first-child {
   section {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
+.price {
+  background-color: #f7f9ea;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.price-content .box:first-child {
+  margin-top: 0; }
+
+.box {
+  width: 32rem;
+  max-width: 32rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  border: 0.5rem solid #e5eaca; }
+
+.box-header,
+.box-body {
+  padding: 2rem 1rem; }
+
+.box-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #c05621; }
+
+.box-header .box-header-price {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0.75rem; }
+
+.box-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5568;
+  margin-top: 1rem; }
+
+.box-body {
+  background-color: #f7fafc;
+  border-top-width: 2px;
+  border-color: #e2e8f0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
+
+.box-body ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem; }
+
+.box-body ul li:first-child {
+  margin-top: 0; }
+
+.box-body ul li svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #38a169; }
+
+.box-body ul li p {
+  margin-left: 0.75rem;
+  color: #4a5568;
+  line-height: 1.5rem; }
+
+.box-cta {
+  margin-top: 2.5rem; }
+
+.box-btn {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #c05621;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  line-height: 1.5rem;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; }
+
+.box-btn:focus {
+  outline: 0; }
+
+.box-btn:hover {
+  background-color: #ed8936; }
+
+.box-price {
+  display: flex;
+  align-items: flex-start;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1; }
+
+.dollar-sign {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.freq {
+  color: #718096;
+  font-size: 1.5rem;
+  font-weight: 500; }
+
+@media (min-width: 768px) {
+  .price {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+
+  .price-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around; }
+
+  .box {
+    max-width: 30%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=app.css.map */

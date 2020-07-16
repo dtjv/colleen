@@ -7,6 +7,9 @@ $primary-lite: #68d391 !default;
 $secondary: #c05621 !default; /* orange */
 $secondary-lite: #ed8936 !default;
 
+$tertiary: #e5eaca; /* pale green */
+$tertiary-lite: #f7f9ea;
+
 $white: #ffffff !default;
 $black: #000000 !default;
 
@@ -66,8 +69,10 @@ $bg-base: $gray-200 !default;
 $bg-dark: $gray-300 !default;
 $bg-primary: $primary !default;
 $bg-secondary: $secondary !default;
+$bg-tertiary: $tertiary !default;
 $bg-primary-lite: $primary-lite !default;
 $bg-secondary-lite: $secondary-lite !default;
+$bg-tertiary-lite: $tertiary-lite !default;
 
 // -----------------------------------------------------------------------------
 // borders

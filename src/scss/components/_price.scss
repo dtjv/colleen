@@ -1,0 +1,145 @@
+.price {
+  background-color: $bg-tertiary-lite;
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+}
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-content .box:first-child {
+  margin-top: 0;
+}
+
+.box {
+  width: 32rem;
+  max-width: 32rem;
+  margin-top: $sz-4;
+  border-radius: $rounded-lg;
+  background-color: $white;
+  border: $sz-2 solid $tertiary;
+}
+
+.box-header,
+.box-body {
+  padding: $sz-8 $sz-4;
+}
+
+.box-header h3 {
+  font-size: $text-md;
+  font-weight: $text-bold;
+  color: $text-secondary;
+}
+
+.box-header .box-header-price {
+  display: flex;
+  align-items: flex-end;
+  margin-top: $sz-3;
+}
+
+.box-header p {
+  font-size: $sz-4;
+  font-weight: $text-normal;
+  color: $text-base;
+  margin-top: $sz-4;
+}
+
+.box-body {
+  background-color: $bg-lite;
+  border-top-width: 2px;
+  border-color: $bg-dark;
+  border-bottom-left-radius: $rounded-lg;
+  border-bottom-right-radius: $rounded-lg;
+}
+
+.box-body ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: $sz-4;
+}
+
+.box-body ul li:first-child {
+  margin-top: 0;
+}
+
+.box-body ul li svg {
+  height: $sz-6;
+  width: $sz-6;
+  color: $text-primary;
+}
+
+.box-body ul li p {
+  margin-left: $sz-3;
+  color: #4a5568;
+  line-height: $sz-6;
+}
+
+.box-cta {
+  margin-top: $sz-10;
+}
+
+.box-btn {
+  display: block;
+  font-size: $sz-4;
+  font-weight: $text-semibold;
+  border-radius: $rounded-lg;
+  color: white;
+  background-color: $bg-secondary;
+  padding: $sz-3 $sz-4;
+  width: 100%;
+  line-height: $sz-6;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+}
+
+.box-btn:focus {
+  outline: 0;
+}
+
+.box-btn:hover {
+  background-color: $bg-secondary-lite;
+}
+
+.box-price {
+  display: flex;
+  align-items: flex-start;
+  font-size: $sz-12;
+  font-weight: $text-ultrabold;
+  line-height: $leading-none;
+}
+
+.dollar-sign {
+  margin-top: $sz-1;
+  font-size: $sz-6;
+  font-weight: $text-bold;
+}
+
+.freq {
+  color: $text-lite;
+  font-size: $sz-6;
+  font-weight: $text-medium;
+}
+
+@media (min-width: $breakpoint-md) {
+  .price {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+
+  .price-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .box {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+}
