@@ -956,6 +956,7 @@ section:first-child {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 .portfolio {
+  background-color: #f7f9ea;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
@@ -985,6 +986,7 @@ article > h4 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.25;
+  color: #4a5568;
   margin-top: 0.5rem; }
 
 .description {
@@ -1032,7 +1034,7 @@ article a:hover {
   font-size: 1.875rem;
   font-weight: 700;
   color: #2d3748;
-  line-height: 1; }
+  line-height: 1.25; }
 
 .price-block > p {
   font-size: 1rem;
@@ -1213,5 +1215,42 @@ input[type="text"]:focus {
 
   form {
     margin-top: 0; } }
+.companies {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.companies-block h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1.25; }
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem; }
+
+.pics div {
+  display: flex;
+  align-items: center;
+  padding: 1rem; }
+
+.pics img {
+  width: 100px;
+  object-fit: cover; }
+
+@media (min-width: 768px) {
+  .companies {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+
+  .companies-block h3 {
+    font-size: 2.25rem; } }
+@media (min-width: 1024px) {
+  .pics {
+    padding-top: 2rem;
+    padding-bottom: 2rem; } }
 
 /*# sourceMappingURL=app.css.map */
