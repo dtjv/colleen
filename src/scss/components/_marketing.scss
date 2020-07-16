@@ -1,18 +1,14 @@
 .mkt {
   background-color: $bg-lite;
-  margin-top: $sz-6;
-}
-
-.mkt-content {
-  padding-top: $sz-6;
-  padding-bottom: $sz-6;
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
 }
 
 .mkt-block h3 {
   font-size: $text-3xl;
   font-weight: $text-bold;
   color: $text-dark;
-  line-height: $leading-loose;
+  line-height: $leading-none;
 }
 
 .mkt-block p {
@@ -23,8 +19,8 @@
 }
 
 .mkt-feature-list {
-  margin-top: $sz-10;
-  margin-bottom: $sz-10;
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
 }
 
 .mkt-feature {
@@ -73,11 +69,6 @@
 }
 
 @media (min-width: $breakpoint-sm) {
-  .mkt-content {
-    padding-left: $sz-4;
-    padding-right: $sz-4;
-  }
-
   .mkt-feature-content h4 {
     font-size: $text-xl;
   }
@@ -85,11 +76,17 @@
 
 @media (min-width: $breakpoint-md) {
   .mkt {
-    margin-top: $sz-4;
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
   }
 
   .mkt-block h3 {
     font-size: $text-5xl;
+  }
+
+  .mkt-feature-list {
+    padding-top: $sz-12;
+    padding-bottom: $sz-12;
   }
 
   .mkt-feature-list ul {
@@ -109,8 +106,9 @@
 }
 
 @media (min-width: $breakpoint-lg) {
-  .mkt {
-    margin-top: $sz-16;
+  .mkt-feature-list {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
   }
 
   .mkt-block {

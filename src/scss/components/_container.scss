@@ -29,3 +29,10 @@ html {
     padding-right: $sz-12;
   }
 }
+
+@media (min-width: $breakpoint-lg) {
+  .container {
+    padding-left: $sz-16;
+    padding-right: $sz-16;
+  }
+}

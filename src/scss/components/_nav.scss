@@ -13,8 +13,8 @@
 
 .nav-avatar {
   border-radius: 50%;
-  height: $sz-8;
-  width: $sz-8;
+  height: $sz-12;
+  width: $sz-12;
 }
 
 .nav-link,
@@ -50,8 +50,14 @@
 }
 
 @media (min-width: $breakpoint-sm) {
-  .nav-link,
-  .nav-avatar {
+  .nav-link {
     margin-left: $sz-4;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .nav-avatar {
+    height: $sz-16;
+    width: $sz-16;
   }
 }

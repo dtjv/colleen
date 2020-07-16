@@ -1,3 +1,16 @@
 .text-secondary {
   color: $text-secondary !important;
 }
+
+.mr-12 {
+  margin-right: $sz-12;
+}
+
+@media (min-width: $breakpoint-md) {
+  .md-w-30 { width: 30% !important; }
+  .md-w-40 { width: 40% !important; }
+  .md-w-50 { width: 50% !important; }
+  .md-w-60 { width: 60% !important; }
+  .md-w-70 { width: 70% !important; }
+}
+
