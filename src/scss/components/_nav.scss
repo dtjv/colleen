@@ -15,7 +15,7 @@
   width: $sz-12;
   border-radius: 50%;
 
-  @media (min-width: $breakpoint-lg) {
+  @media screen and (min-width: $breakpoint-lg) {
     height: $sz-16;
     width: $sz-16;
   }

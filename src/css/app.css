@@ -571,7 +571,7 @@ body {
   height: 3rem;
   width: 3rem;
   border-radius: 50%; }
-  @media (min-width: 64rem) {
+  @media screen and (min-width: 64rem) {
     .nav-avatar {
       height: 4rem;
       width: 4rem; } }
@@ -596,5 +596,100 @@ body {
   transition-property: none; }
   .nav-link--active:hover {
     background-color: #252f3f; }
+
+.hero-shell {
+  padding-top: 1.5rem;
+  padding-top: 2rem; }
+  @media screen and (min-width: 48rem) {
+    .hero-shell {
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+  @media screen and (min-width: 64rem) {
+    .hero-shell {
+      padding-top: 2rem;
+      padding-bottom: 4rem; } }
+  @media screen and (min-width: 80rem) {
+    .hero-shell {
+      padding-top: 2.5rem; } }
+
+.hero {
+  display: flex; }
+  @media screen and (min-width: 64rem) {
+    .hero {
+      height: 25rem; } }
+
+.hero-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 40rem) {
+    .hero-block {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
+  @media screen and (min-width: 64rem) {
+    .hero-block {
+      width: 50%;
+      padding-right: 2rem; } }
+
+.hero-head {
+  color: #252f3f;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.25; }
+  @media screen and (min-width: 40rem) {
+    .hero-head {
+      font-size: 3rem; } }
+  @media screen and (min-width: 48rem) {
+    .hero-head {
+      font-size: 4rem; } }
+  @media screen and (min-width: 64rem) {
+    .hero-head {
+      font-size: 3rem; } }
+  @media screen and (min-width: 80rem) {
+    .hero-head {
+      font-size: 4rem; } }
+
+.hero-lead {
+  color: #38a169;
+  font-size: 1.125rem;
+  font-weight: 600; }
+  @media screen and (min-width: 40rem) {
+    .hero-lead {
+      font-size: 1.25rem; } }
+  @media screen and (min-width: 48rem) {
+    .hero-lead {
+      font-size: 1.5rem; } }
+
+.hero-text {
+  color: #c05621;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem; }
+  @media screen and (min-width: 40rem) {
+    .hero-text {
+      font-size: 1.125rem; } }
+  @media screen and (min-width: 48rem) {
+    .hero-text {
+      font-size: 1.25rem; } }
+
+.hero-image {
+  display: none; }
+  @media screen and (min-width: 64rem) {
+    .hero-image {
+      width: 50%;
+      display: block;
+      position: relative; } }
+
+@media screen and (min-width: 64rem) {
+  .hero-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; } }
 
 /*# sourceMappingURL=app.css.map */
