@@ -1,0 +1,105 @@
+.mkt {}
+
+.mkt-block {
+  @media (min-width: $breakpoint-lg) {
+    text-align: center;
+  }
+}
+
+.mkt-block h3 {
+  font-size: $text-3xl;
+  font-weight: $text-bold;
+  color: $text-dark;
+  line-height: $leading-none;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-4xl;
+  }
+}
+
+.mkt-block p {
+  font-size: $text-md;
+  font-weight: $text-normal;
+  color: $text-base;
+  margin-top: $sz-6;
+}
+
+.mkt-item-list {
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    row-gap: $sz-10;
+    column-gap: $sz-8;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: $sz-12;
+    padding-bottom: $sz-12;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+}
+
+.mkt-item {
+  display: flex;
+  margin-top: $sz-10;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+  }
+}
+
+.mkt-item-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: $sz-12;
+  height: $sz-12;
+  color: $white;
+  border-radius: $rounded-md;
+  background-color: $bg-primary;
+}
+
+.mkt-item-icon svg {
+  width: $sz-6;
+  height: $sz-6;
+}
+
+.mkt-item-content {
+  margin-left: $sz-4;
+}
+
+.mkt-item-content h4 {
+  font-size: $text-lg;
+  font-weight: $text-semibold;
+  color: $text-dark;
+  line-height: $sz-6;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: $text-xl;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-2xl;
+  }
+}
+
+.mkt-item-content p {
+  font-size: $text-md;
+  font-weight: $text-normal;
+  color: $text-base;
+  line-height: $sz-6;
+  margin-top: $sz-2;
+}

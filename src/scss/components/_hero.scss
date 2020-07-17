@@ -1,7 +1,7 @@
 // hero needs a custom y-axis padding shell
 .hero-shell {
   padding-top: $sz-6;
-  padding-top: $sz-8;
+  padding-bottom: $sz-8;
 
   @media screen and (min-width: $breakpoint-md) {
     padding-top: $sz-4;
