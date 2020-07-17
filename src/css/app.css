@@ -602,7 +602,10 @@ video {
     border-left-width: 2px !important; } }
 @media (min-width: 1024px) {
   .lg-w-25 {
-    width: 25% !important; } }
+    width: 25% !important; }
+
+  .lg-w-35 {
+    width: 35% !important; } }
 .divider {
   margin: 0 auto; }
 
@@ -910,6 +913,9 @@ section {
 section:first-child {
   padding-top: 0; }
 
+section:last-child {
+  padding-bottom: 0; }
+
 .section-flex {
   display: flex;
   flex-direction: column;
@@ -976,6 +982,9 @@ section:first-child {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
+.portfolio-articles article:last-child {
+  padding-bottom: 0; }
+
 article .type {
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -986,8 +995,8 @@ article > h4 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.25;
-  color: #4a5568;
-  margin-top: 0.5rem; }
+  color: #38a169;
+  margin-top: 0.25rem; }
 
 .description {
   margin-top: 1rem;
@@ -996,12 +1005,15 @@ article > h4 {
   color: #4a5568; }
 
 article a {
-  display: block;
-  color: #38a169;
-  margin-top: 1rem; }
+  display: inline-block;
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-decoration: underline; }
 
 article a:hover {
-  color: #68d391; }
+  color: #718096; }
 
 @media (min-width: 768px) {
   .portfolio {
@@ -1044,13 +1056,13 @@ article a:hover {
 
 .price-custom-block,
 .boxes {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 2rem; }
 
 .boxes {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 2rem; }
 
 .boxes .box:first-child {
   margin-top: 0; }
@@ -1145,7 +1157,9 @@ article a:hover {
 
   .price-custom-block,
   .boxes {
-    padding-top: 3rem;
+    padding-top: 3rem; }
+
+  .boxes {
     padding-bottom: 3rem; }
 
   .box {
@@ -1154,12 +1168,12 @@ article a:hover {
 @media (min-width: 1024px) {
   .price-custom-block,
   .boxes {
-    padding-top: 4rem;
-    padding-bottom: 4rem; }
+    padding-top: 4rem; }
 
   .boxes {
     flex-direction: row;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-bottom: 4rem; }
 
   .box {
     max-width: 30%;
@@ -1249,8 +1263,23 @@ input[type="text"]:focus {
   .companies-block h3 {
     font-size: 2.25rem; } }
 @media (min-width: 1024px) {
-  .pics {
-    padding-top: 2rem;
-    padding-bottom: 2rem; } }
+  .pics img {
+    width: 150px; } }
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.social-icons a {
+  display: block;
+  padding: 1rem 0.5rem; }
+
+.social-icons a svg {
+  width: 50px;
+  height: 50px; }
 
 /*# sourceMappingURL=app.css.map */

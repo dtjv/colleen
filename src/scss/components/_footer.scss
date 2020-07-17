@@ -1,0 +1,20 @@
+footer {
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: block;
+  padding: $sz-4 $sz-2;
+}
+
+.social-icons a svg {
+  width: 50px;
+  height: 50px;
+}

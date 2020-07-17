@@ -41,8 +41,7 @@
 }
 
 @media (min-width: $breakpoint-lg) {
-  .pics {
-    padding-top: $sz-8;
-    padding-bottom: $sz-8;
+  .pics img {
+    width: 150px;
   }
 }

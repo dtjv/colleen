@@ -12,6 +12,10 @@ section:first-child {
   padding-top: 0;
 }
 
+section:last-child {
+  padding-bottom: 0;
+}
+
 .section-flex {
   display: flex;
   flex-direction: column;

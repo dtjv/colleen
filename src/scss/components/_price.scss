@@ -21,13 +21,13 @@
 .price-custom-block,
 .boxes {
   padding-top: $sz-8;
-  padding-bottom: $sz-8;
 }
 
 .boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: $sz-8;
 }
 
 .boxes .box:first-child {
@@ -142,6 +142,9 @@
   .price-custom-block,
   .boxes {
     padding-top: $sz-12;
+  }
+
+  .boxes {
     padding-bottom: $sz-12;
   }
 
@@ -155,12 +158,12 @@
   .price-custom-block,
   .boxes {
     padding-top: $sz-16;
-    padding-bottom: $sz-16;
   }
 
   .boxes {
     flex-direction: row;
     align-items: flex-start;
+    padding-bottom: $sz-16;
   }
 
   .box {

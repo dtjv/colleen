@@ -23,6 +23,10 @@
   padding-bottom: $sz-6;
 }
 
+.portfolio-articles article:last-child {
+  padding-bottom: 0;
+}
+
 article .type {
   text-transform: uppercase;
   font-size: $text-sm;
@@ -34,8 +38,8 @@ article > h4 {
   font-size: $text-2xl;
   font-weight: $text-bold;
   line-height: $leading-tight;
-  color: $text-base;
-  margin-top: $sz-2;
+  color: $text-primary;
+  margin-top: $sz-1;
 }
 
 .description {
@@ -46,13 +50,16 @@ article > h4 {
 }
 
 article a {
-  display: block;
-  color: $text-primary;
+  display: inline-block;
+  color: $text-dark;
+  font-weight: $text-semibold;
+  font-size: $text-md;
   margin-top: $sz-4;
+  text-decoration: underline;
 }
 
 article a:hover {
-  color: $text-primary-lite;
+  color: $text-lite;
 }
 
 @media (min-width: $breakpoint-md) {
