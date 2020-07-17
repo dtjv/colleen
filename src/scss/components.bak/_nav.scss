@@ -1,51 +1,63 @@
-.nav {
+.nav-content {
   display: flex;
   height: $sz-24;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .nav-block {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .nav-avatar {
+  border-radius: 50%;
   height: $sz-12;
   width: $sz-12;
-  border-radius: 50%;
-
-  @media (min-width: $breakpoint-lg) {
-    height: $sz-16;
-    width: $sz-16;
-  }
 }
 
-.nav-link {
+.nav-link,
+.nav-link-selected {
   border-radius: $rounded-md;
   font-size: $text-sm;
   font-weight: $text-medium;
   line-height: $leading-tight;
   padding: $sz-2 $sz-3;
+}
+
+.nav-link {
   transition-duration: 150ms;
   transition-property: background-color, border-color, color, fill, stroke,
     opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  &:focus {
-    background-color: $bg-ultradark;
-    color: $white;
-    outline: 0;
+.nav-link-selected {
+  background-color: #1a202c; /* TODO */
+  color: $white;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: $bg-base;
+  color: $white;
+}
+
+.nav-link:focus,
+.nav-link--selected:focus {
+  outline: 0;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .nav-link {
+    margin-left: $sz-4;
   }
 }
 
-.nav-link--active {
-  background-color: $bg-ultradark;
-  color: $white;
-  transition-property: none;
-
-  &:hover {
-    background-color: $bg-ultradark;
+@media (min-width: $breakpoint-lg) {
+  .nav-avatar {
+    height: $sz-16;
+    width: $sz-16;
   }
 }

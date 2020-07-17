@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An updated UI design for a personal website",
   "scripts": {
-    "format": "prettier --write '**/*.{js,scss,md}'",
+    "format": "prettier --write '**/*.{html,scss,md}'",
     "build": "sass src/scss/app.scss:src/css/app.css",
     "watch": "npm run build -- --watch"
   },

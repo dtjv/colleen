@@ -1,0 +1,30 @@
+.px-shell {
+  max-width: $sz-340;
+  padding-left: $sz-4;
+  padding-right: $sz-4;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    padding-left: $sz-8;
+    padding-right: $sz-8;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-left: $sz-12;
+    padding-right: $sz-12;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    padding-left: $sz-16;
+    padding-right: $sz-16;
+  }
+}
+
+.py-shell {
+  padding-top: $sz-8;
+  padding-bottom: $sz-8;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+}

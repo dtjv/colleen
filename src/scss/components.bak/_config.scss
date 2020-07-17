@@ -1,32 +1,25 @@
 // -----------------------------------------------------------------------------
 // colors
 // -----------------------------------------------------------------------------
+$primary: #38a169 !default; /* green */
+$primary-lite: #68d391 !default;
+
+$secondary: #c05621 !default; /* orange */
+$secondary-lite: #ed8936 !default;
+
+$tertiary: #e5eaca; /* pale green */
+$tertiary-lite: #f7f9ea;
+
 $white: #ffffff !default;
 $black: #000000 !default;
 
-// green
-$primary: #38a169 !default;
-$primary-lite: #68d391 !default;
+$gray-100: #f7fafc !default;
+$gray-200: #edf2f7 !default;
+$gray-300: #e2e8f0 !default;
 
-// orange
-$secondary: #c05621 !default;
-$secondary-lite: #ed8936 !default;
-
-// pale green
-$tertiary: #e5eaca;
-$tertiary-lite: #f7f9ea;
-
-// grays
-$gray-50: #f9fafb !default;
-$gray-100: #f4f5f7 !default;
-$gray-200: #e5e7eb !default;
-$gray-300: #d2d6dc !default;
-$gray-400: #9fa6b2 !default;
-$gray-500: #6b7280 !default;
-$gray-600: #4b5563 !default;
-$gray-700: #374151 !default;
-$gray-800: #252f3f !default;
-$gray-900: #161e2e !default;
+$gray-600: #718096 !default;
+$gray-700: #4a5568 !default;
+$gray-800: #2d3748 !default;
 
 // -----------------------------------------------------------------------------
 // fonts
@@ -38,7 +31,6 @@ $font-family-fallback: "Inter", sans-serif !default;
 $text-lite: $gray-600 !default;
 $text-base: $gray-700 !default;
 $text-dark: $gray-800 !default;
-
 $text-primary: $primary !default;
 $text-secondary: $secondary !default;
 $text-primary-lite: $primary-lite !default;
@@ -77,8 +69,6 @@ $leading-loose: 2 !default;
 $bg-lite: $gray-100 !default;
 $bg-base: $gray-200 !default;
 $bg-dark: $gray-300 !default;
-$bg-ultradark: $gray-800 !default;
-
 $bg-primary: $primary !default;
 $bg-secondary: $secondary !default;
 $bg-tertiary: $tertiary !default;
@@ -99,15 +89,14 @@ $rounded-full: 9999px !default;
 // -----------------------------------------------------------------------------
 // breakpoints
 // -----------------------------------------------------------------------------
-$breakpoint-sm: 40rem !default;
-$breakpoint-md: 48rem !default;
-$breakpoint-lg: 64rem !default;
-$breakpoint-xl: 80rem !default;
+$breakpoint-sm: 640px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1280px !default;
 
 // -----------------------------------------------------------------------------
 // sizes
 // -----------------------------------------------------------------------------
-$px: 1px;
 $sz-0: 0 !default;
 $sz-1: 0.25rem !default;
 $sz-2: 0.5rem !default;
@@ -126,4 +115,3 @@ $sz-40: 10rem !default;
 $sz-48: 12rem !default;
 $sz-56: 14rem !default;
 $sz-64: 16rem !default;
-$sz-340: 85rem !default;
