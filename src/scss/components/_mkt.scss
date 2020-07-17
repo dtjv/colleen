@@ -1,27 +1,28 @@
-.mkt {}
+.mkt {
+}
 
 .mkt-block {
   @media (min-width: $breakpoint-lg) {
     text-align: center;
   }
-}
 
-.mkt-block h3 {
-  font-size: $text-3xl;
-  font-weight: $text-bold;
-  color: $text-dark;
-  line-height: $leading-none;
+  h3 {
+    font-size: $text-3xl;
+    font-weight: $text-bold;
+    color: $text-dark;
+    line-height: $leading-none;
 
-  @media (min-width: $breakpoint-md) {
-    font-size: $text-4xl;
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-4xl;
+    }
   }
-}
 
-.mkt-block p {
-  font-size: $text-md;
-  font-weight: $text-normal;
-  color: $text-base;
-  margin-top: $sz-6;
+  p {
+    font-size: $text-md;
+    font-weight: $text-normal;
+    color: $text-base;
+    margin-top: $sz-6;
+  }
 }
 
 .mkt-item-list {
@@ -70,36 +71,36 @@
   color: $white;
   border-radius: $rounded-md;
   background-color: $bg-primary;
-}
 
-.mkt-item-icon svg {
-  width: $sz-6;
-  height: $sz-6;
+  svg {
+    width: $sz-6;
+    height: $sz-6;
+  }
 }
 
 .mkt-item-content {
   margin-left: $sz-4;
-}
 
-.mkt-item-content h4 {
-  font-size: $text-lg;
-  font-weight: $text-semibold;
-  color: $text-dark;
-  line-height: $sz-6;
+  h4 {
+    font-size: $text-lg;
+    font-weight: $text-semibold;
+    color: $text-dark;
+    line-height: $sz-6;
 
-  @media (min-width: $breakpoint-sm) {
-    font-size: $text-xl;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $text-xl;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-2xl;
+    }
   }
 
-  @media (min-width: $breakpoint-md) {
-    font-size: $text-2xl;
+  p {
+    font-size: $text-md;
+    font-weight: $text-normal;
+    color: $text-base;
+    line-height: $sz-6;
+    margin-top: $sz-2;
   }
-}
-
-.mkt-item-content p {
-  font-size: $text-md;
-  font-weight: $text-normal;
-  color: $text-base;
-  line-height: $sz-6;
-  margin-top: $sz-2;
 }
