@@ -1,6 +1,3 @@
-.mkt {
-}
-
 .mkt-block {
   text-align: center;
 
@@ -83,7 +80,7 @@
     font-size: $text-lg;
     font-weight: $text-semibold;
     color: $text-dark;
-    line-height: $sz-6;
+    line-height: $leading-none;
 
     @media (min-width: $breakpoint-sm) {
       font-size: $text-xl;
@@ -98,7 +95,7 @@
     font-size: $text-md;
     font-weight: $text-normal;
     color: $text-base;
-    line-height: $sz-6;
+    line-height: $leading-normal;
     margin-top: $sz-2;
   }
 }

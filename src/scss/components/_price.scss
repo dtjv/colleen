@@ -32,9 +32,10 @@
     padding-bottom: $sz-12;
   }
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding-top: $sz-16;
     padding-bottom: $sz-16;
   }
@@ -53,12 +54,13 @@
   }
 
   @media (min-width: $breakpoint-md) {
-    width: 75%;
-    max-width: 75%;
+    width: 60%;
+    max-width: 60%;
   }
 
   @media (min-width: $breakpoint-lg) {
     max-width: 30%;
+    margin-top: 0;
   }
 }
 
@@ -87,20 +89,20 @@
   .item-price {
     display: flex;
     align-items: flex-start;
-    font-size: $sz-12;
+    font-size: $text-5xl;
     font-weight: $text-ultrabold;
     line-height: $leading-none;
   }
 
   .dollar-sign {
     margin-top: $sz-1;
-    font-size: $sz-6;
+    font-size: $text-2xl;
     font-weight: $text-bold;
   }
 
   .freq {
     color: $text-lite;
-    font-size: $sz-6;
+    font-size: $text-2xl;
     font-weight: $text-medium;
   }
 }
@@ -131,8 +133,8 @@
 
   p {
     margin-left: $sz-3;
-    color: #4a5568;
-    line-height: $sz-6;
+    color: $text-base;
+    line-height: $leading-normal;
   }
 }
 
