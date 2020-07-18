@@ -37,6 +37,7 @@
     background-color: $bg-ultradark;
     color: $white;
     outline: 0;
+    cursor: pointer;
   }
 }
 
@@ -46,6 +47,6 @@
   transition-property: none;
 
   &:hover {
-    background-color: $bg-ultradark;
+    cursor: default;
   }
 }
