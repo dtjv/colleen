@@ -906,6 +906,9 @@ body {
   .contact-block {
     width: 50%; } }
 
+.contact-block > div {
+  padding-right: 2rem; }
+
 .contact-block h3 {
   font-size: 1.875rem;
   font-weight: 700;

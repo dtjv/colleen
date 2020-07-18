@@ -9,6 +9,10 @@
     width: 50%;
   }
 
+  > div {
+    padding-right: $sz-8;
+  }
+
   h3 {
     font-size: $text-3xl;
     font-weight: $text-bold;
