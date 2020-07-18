@@ -1,7 +1,7 @@
 {
   "name": "cv-ui",
   "version": "1.0.0",
-  "description": "An updated UI design for a personal website",
+  "description": "UI for my sister's peronsal website",
   "scripts": {
     "format": "prettier --write '**/*.{html,scss,md}'",
     "build": "node-sass src/scss/pages/ -o src/css/",
@@ -13,5 +13,6 @@
   "devDependencies": {
     "node-sass": "4.14.1",
     "prettier": "2.0.5"
-  }
+  },
+  "private": true
 }
