@@ -1202,4 +1202,22 @@ input[type="email"] {
     outline: 0;
     border-color: #c05621; }
 
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .social-icons a {
+    display: block;
+    padding: 0.25rem;
+    color: #252f3f; }
+    .social-icons a:hover {
+      color: #374151; }
+    .social-icons a svg {
+      width: 40px;
+      height: 40px; }
+
 /*# sourceMappingURL=app.css.map */
