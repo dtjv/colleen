@@ -4,7 +4,7 @@
   "description": "An updated UI design for a personal website",
   "scripts": {
     "format": "prettier --write '**/*.{html,scss,md}'",
-    "build": "sass src/scss/app.scss:src/css/app.css",
+    "build": "node-sass src/scss/pages/ -o src/css/",
     "watch": "npm run build -- --watch"
   },
   "keywords": [],
