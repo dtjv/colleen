@@ -113,10 +113,6 @@
 // -----------------------------------------------------------------------------
 // display, alignment
 // -----------------------------------------------------------------------------
-.align-center {
-  text-align: center !important;
-}
-
 @media (min-width: $breakpoint-md) {
   .md-flex {
     display: flex !important;

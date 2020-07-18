@@ -2,9 +2,7 @@
 }
 
 .mkt-block {
-  @media (min-width: $breakpoint-lg) {
-    text-align: center;
-  }
+  text-align: center;
 
   h3 {
     font-size: $text-3xl;

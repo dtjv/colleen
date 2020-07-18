@@ -606,9 +606,6 @@ body {
 
   .md-border-l-2 {
     border-left-width: 2px !important; } }
-.align-center {
-  text-align: center !important; }
-
 @media (min-width: 48rem) {
   .md-flex {
     display: flex !important; }
@@ -786,22 +783,21 @@ body {
     object-fit: cover;
     object-position: top; } }
 
-@media (min-width: 64rem) {
-  .mkt-block {
-    text-align: center; } }
-.mkt-block h3 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #252f3f;
-  line-height: 1; }
-  @media (min-width: 48rem) {
-    .mkt-block h3 {
-      font-size: 2.25rem; } }
-.mkt-block p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #374151;
-  margin-top: 1.5rem; }
+.mkt-block {
+  text-align: center; }
+  .mkt-block h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #252f3f;
+    line-height: 1; }
+    @media (min-width: 48rem) {
+      .mkt-block h3 {
+        font-size: 2.25rem; } }
+  .mkt-block p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 1.5rem; }
 
 .mkt-item-list {
   padding-top: 2rem;
@@ -910,22 +906,21 @@ body {
   margin-top: 1.5rem;
   color: #374151; }
 
-@media (min-width: 64rem) {
-  .portfolio-block {
-    text-align: center; } }
-.portfolio-block h3 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #252f3f;
-  line-height: 1; }
-  @media (min-width: 48rem) {
-    .portfolio-block h3 {
-      font-size: 2.25rem; } }
-.portfolio-block p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #374151;
-  margin-top: 1.5rem; }
+.portfolio-block {
+  text-align: center; }
+  .portfolio-block h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #252f3f;
+    line-height: 1; }
+    @media (min-width: 48rem) {
+      .portfolio-block h3 {
+        font-size: 2.25rem; } }
+  .portfolio-block p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 1.5rem; }
 
 .portfolio-article {
   padding-top: 1.5rem;
@@ -969,5 +964,33 @@ body {
     text-decoration: underline; }
     .portfolio-article a:hover {
       color: #4b5563; }
+
+.companies-block {
+  text-align: center; }
+  .companies-block h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #252f3f;
+    line-height: 1.25; }
+    @media (min-width: 48rem) {
+      .companies-block h3 {
+        font-size: 2.25rem; } }
+
+.companies-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem; }
+  .companies-img-list li {
+    display: flex;
+    align-items: center;
+    padding: 1rem; }
+    .companies-img-list li img {
+      width: 100px;
+      object-fit: cover; }
+      @media (min-width: 64rem) {
+        .companies-img-list li img {
+          width: 150px; } }
 
 /*# sourceMappingURL=app.css.map */
