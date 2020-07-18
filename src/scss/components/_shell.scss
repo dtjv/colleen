@@ -1,5 +1,5 @@
 .px-shell {
-  max-width: 1100px;
+  // max-width: 1100px;
   margin: 0 auto;
   padding-left: $sz-4;
   padding-right: $sz-4;
@@ -15,8 +15,8 @@
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    padding-left: $sz-16;
-    padding-right: $sz-16;
+    padding-left: $sz-24;
+    padding-right: $sz-24;
   }
 }
 

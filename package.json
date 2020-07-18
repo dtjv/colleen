@@ -5,7 +5,8 @@
   "scripts": {
     "format": "prettier --write '**/*.{html,scss,md}'",
     "build": "node-sass src/scss/pages/ -o src/css/",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "deploy": "gh-pages -d src"
   },
   "keywords": [],
   "author": "David J. Valles <davidtjvalles@gmail.com>",
