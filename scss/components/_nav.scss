@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  height: $sz-24;
+  justify-content: space-between;
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-avatar {
+  height: $sz-12;
+  width: $sz-12;
+  border-radius: 50%;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    height: $sz-16;
+    width: $sz-16;
+  }
+}
+
+.nav-link {
+  border-radius: $rounded-md;
+  font-size: $text-sm;
+  font-weight: $text-medium;
+  line-height: $leading-tight;
+  padding: $sz-2 $sz-3;
+  transition-duration: 150ms;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $bg-ultradark;
+    color: $white;
+    outline: 0;
+    cursor: pointer;
+  }
+}
+
+.nav-link--active {
+  background-color: $bg-ultradark;
+  color: $white;
+  transition-property: none;
+
+  &:hover {
+    cursor: default;
+  }
+}

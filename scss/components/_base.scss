@@ -1,0 +1,24 @@
+@import "reset";
+@import "config";
+@import "../../fonts/inter.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: $font-family-fallback;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: $font-family;
+  }
+}
+
+body {
+  margin: 0 auto;
+  color: $text-base;
+  background-color: $white;
+}

@@ -1,0 +1,80 @@
+.portfolio-block {
+  text-align: center;
+
+  h3 {
+    font-size: $text-3xl;
+    font-weight: $text-bold;
+    color: $text-dark;
+    line-height: $leading-none;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-4xl;
+    }
+  }
+
+  p {
+    font-size: $text-md;
+    font-weight: $text-normal;
+    color: $text-base;
+    margin-top: $sz-6;
+  }
+}
+
+.portfolio-article {
+  padding-top: $sz-6;
+  padding-bottom: $sz-6;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: $sz-8;
+    padding-bottom: $sz-8;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding-top: $sz-10;
+    padding-bottom: $sz-10;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding-top: $sz-12;
+    padding-bottom: $sz-12;
+  }
+
+  & .article-type {
+    text-transform: uppercase;
+    font-size: $text-sm;
+    font-weight: $text-medium;
+    color: $text-secondary;
+  }
+
+  & h4 {
+    font-size: $text-2xl;
+    font-weight: $text-bold;
+    line-height: $leading-tight;
+    color: $text-primary;
+    margin-top: $sz-1;
+  }
+
+  & .description {
+    font-size: $text-md;
+    font-weight: $text-normal;
+    color: $text-base;
+    margin-top: $sz-4;
+  }
+
+  & a {
+    display: inline-block;
+    font-weight: $text-semibold;
+    font-size: $text-md;
+    color: $text-dark;
+    margin-top: $sz-4;
+    text-decoration: underline;
+
+    &:hover {
+      color: $text-lite;
+    }
+  }
+}

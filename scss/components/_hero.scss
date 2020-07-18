@@ -1,0 +1,119 @@
+// hero needs a custom y-axis padding shell
+.hero-shell {
+  padding-top: $sz-6;
+  padding-bottom: $sz-8;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: $sz-4;
+    padding-bottom: $sz-4;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    padding-top: $sz-8;
+    padding-bottom: $sz-16;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    padding-top: $sz-10;
+  }
+}
+
+.hero {
+  display: flex;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    height: $sz-100;
+  }
+}
+
+.hero-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    padding-top: $sz-16;
+    padding-bottom: $sz-16;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 50%;
+    padding-right: $sz-8;
+  }
+}
+
+.hero-head {
+  color: $text-dark;
+  font-size: $text-4xl;
+  font-weight: $text-extrabold;
+  line-height: $leading-tight;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: $text-5xl;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: $text-6xl;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: $text-5xl;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: $text-6xl;
+  }
+}
+
+.hero-lead {
+  color: $text-primary;
+  font-size: $text-lg;
+  font-weight: $text-semibold;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: $text-xl;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: $text-2xl;
+  }
+}
+
+.hero-text {
+  color: $text-secondary;
+  font-size: $text-md;
+  font-weight: $text-normal;
+  margin-top: $sz-2;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: $text-lg;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: $text-xl;
+  }
+}
+
+.hero-image {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 50%;
+    display: block;
+    position: relative;
+  }
+}
+
+.hero-image img {
+  @media screen and (min-width: $breakpoint-lg) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
