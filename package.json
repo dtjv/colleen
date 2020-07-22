@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "UI conecpt for a peronsal website",
   "scripts": {
-    "format": "prettier --write '**/*.{html,scss,md}'",
+    "format": "prettier --write '**/*.{js,html,scss,md}'",
     "build:css": "postcss src/css/pages/*.css --dir dist/css",
-    "build:pug": "pug src/pug --out dist",
+    "build:pug": "pug -O pug.config.js src/pug --out dist",
     "watch:css": "chokidar \"src/**/*.css\" -c \"yarn build:css\"",
     "watch:pug": "chokidar \"src/**/*.pug\" -c \"yarn build:pug\"",
-    "deploy": "gh-pages -d dist",
+    "build": "yarn build:pug && yarn build:css",
+    "build:pro": "NODE_ENV=production BASEURL=/cv-ui yarn build",
+    "deploy": "yarn build:pro && gh-pages -d dist",
     "start": "live-server dist"
   },
   "author": "David J. Valles <davidtjvalles@gmail.com>",
@@ -23,8 +25,7 @@
     "postcss-import": "12.0.1",
     "precss": "4.0.0",
     "prettier": "2.0.5",
-    "pug-cli": "1.0.0-alpha6",
-    "replace-in-files-cli": "0.3.1"
+    "pug-cli": "1.0.0-alpha6"
   },
   "private": true
 }

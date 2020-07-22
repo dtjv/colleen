@@ -1,3 +1,6 @@
 node_modules
 .sass-cache
 NOTES.md
+yarn-error.log
+dist/*.html
+dist/css/*.css

@@ -1,5 +1,6 @@
 @import "reset";
-@import "config";
+@import "../config/config.dev";
+@import "../config/config.production";
 @import "inter";
 
 * {
