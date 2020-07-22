@@ -1,6 +1,6 @@
 @import "reset";
 @import "config";
-@import "../../fonts/inter";
+@import "inter";
 
 * {
   -webkit-font-smoothing: antialiased;

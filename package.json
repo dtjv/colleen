@@ -4,16 +4,27 @@
   "description": "UI conecpt for a peronsal website",
   "scripts": {
     "format": "prettier --write '**/*.{html,scss,md}'",
-    "build": "node-sass --output-style compressed src/scss/pages/ -o src/css/",
-    "watch": "npm run build -- --watch",
-    "deploy": "gh-pages -d src"
+    "build:css": "postcss src/css/pages/*.css --dir dist/css",
+    "build:pug": "pug src/pug --out dist",
+    "watch:css": "chokidar \"src/**/*.css\" -c \"yarn build:css\"",
+    "watch:pug": "chokidar \"src/**/*.pug\" -c \"yarn build:pug\"",
+    "deploy": "gh-pages -d dist",
+    "start": "live-server dist"
   },
   "author": "David J. Valles <davidtjvalles@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "2.3.0",
+    "autoprefixer": "9.8.5",
+    "chokidar-cli": "2.1.0",
+    "cssnano": "4.1.10",
     "gh-pages": "3.1.0",
-    "node-sass": "4.14.1",
-    "prettier": "2.0.5"
+    "postcss-cli": "7.1.1",
+    "postcss-import": "12.0.1",
+    "precss": "4.0.0",
+    "prettier": "2.0.5",
+    "pug-cli": "1.0.0-alpha6",
+    "replace-in-files-cli": "0.3.1"
   },
   "private": true
 }
