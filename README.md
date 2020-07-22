@@ -11,9 +11,14 @@ $ git clone https://github.com/dtjv/cv-ui.git
 $ cd cv-ui
 $ yarn
 
-# in one terminal
-$ yarn watch
+# in terminal 1
+$ yarn watch:pug
 
-# in another terminal
-$ live-server src
+# in terminal 2
+$ yarn watch:css
+
+# in terminal 3
+$ yarn start
 ```
+
+You can issue `yarn run` to see a list of all scripts available.
