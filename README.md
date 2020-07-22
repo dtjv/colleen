@@ -2,6 +2,8 @@
 
 UI concept for a personal website.
 
+http://dtjv.io/cv-ui/
+
 ## Get Started
 
 Install [live-server](https://github.com/tapio/live-server) globally.
