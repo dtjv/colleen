@@ -4,7 +4,7 @@
   "description": "UI conecpt for a peronsal website",
   "scripts": {
     "format": "prettier --write '**/*.{html,scss,md}'",
-    "build": "node-sass src/scss/pages/ -o src/css/",
+    "build": "node-sass --output-style compressed src/scss/pages/ -o src/css/",
     "watch": "npm run build -- --watch",
     "deploy": "gh-pages -d src"
   },
