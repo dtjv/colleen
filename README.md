@@ -1,15 +1,13 @@
 # cv-ui
 
-UI for my sister's personal website.
+UI concept for a personal website.
 
-## Development
+## Get Started
 
-> I've installed [live-server](https://github.com/tapio/live-server) globally.
-
-After you clone repo down...
+Install [live-server](https://github.com/tapio/live-server) globally.
 
 ```sh
-
+$ git clone https://github.com/dtjv/cv-ui.git
 $ cd cv-ui
 $ yarn
 
