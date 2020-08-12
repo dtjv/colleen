@@ -4,6 +4,7 @@
   "description": "UI conecpt for a peronsal website",
   "scripts": {
     "format": "prettier --write '**/*.{js,html,scss,md}'",
+    "clean": "rimraf dist/*.html dist/css",
     "build:css": "postcss src/css/pages/*.css --dir dist/css",
     "build:pug": "pug -O pug.config.js src/pug --out dist",
     "watch:css": "chokidar \"src/**/*.css\" -c \"yarn build:css\"",
@@ -27,5 +28,8 @@
     "prettier": "2.0.5",
     "pug-cli": "1.0.0-alpha6"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "rimraf": "3.0.2"
+  }
 }
