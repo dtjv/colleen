@@ -10,8 +10,7 @@
     "watch:css": "chokidar \"src/**/*.css\" -c \"yarn build:css\"",
     "watch:pug": "chokidar \"src/**/*.pug\" -c \"yarn build:pug\"",
     "build": "yarn build:pug && yarn build:css",
-    "build:pro": "NODE_ENV=production BASEURL=/cv-ui yarn build",
-    "deploy": "yarn build:pro && gh-pages -d dist",
+    "deploy": "NODE_ENV=production yarn build && gh-pages -d dist",
     "start": "live-server dist"
   },
   "author": "David J. Valles <davidtjvalles@gmail.com>",
@@ -21,15 +20,14 @@
     "autoprefixer": "9.8.5",
     "chokidar-cli": "2.1.0",
     "cssnano": "4.1.10",
+    "dotenv-safe": "8.2.0",
     "gh-pages": "3.1.0",
     "postcss-cli": "7.1.1",
     "postcss-import": "12.0.1",
     "precss": "4.0.0",
     "prettier": "2.0.5",
-    "pug-cli": "1.0.0-alpha6"
-  },
-  "private": true,
-  "dependencies": {
+    "pug-cli": "1.0.0-alpha6",
     "rimraf": "3.0.2"
-  }
+  },
+  "private": true
 }

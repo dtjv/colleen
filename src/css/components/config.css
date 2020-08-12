@@ -1,4 +1,5 @@
-$baseurl: ;
+@import "../env/globals.dev.css";
+@import "../env/globals.pro.css";
 
 /*-----------------------------------------------------------------------------*/
 /*colors*/

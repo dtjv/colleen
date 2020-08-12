@@ -1,21 +1,15 @@
+const isPro = process.env.NODE_ENV === "production";
+
 module.exports = {
   plugins: [
     require("postcss-import")({
       filter: (path) => {
         if (
-          process.env.NODE_ENV === "production" &&
-          path.includes("config.dev")
+          (isPro && path.includes(".dev")) ||
+          (!isPro && path.includes(".pro"))
         ) {
           return false;
         }
-
-        if (
-          process.env.NODE_ENV !== "production" &&
-          path.includes("config.production")
-        ) {
-          return false;
-        }
-
         return true;
       },
     }),

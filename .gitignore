@@ -2,5 +2,6 @@ node_modules
 .sass-cache
 NOTES.md
 yarn-error.log
+.env
 dist/*.html
 dist/css/*.css
