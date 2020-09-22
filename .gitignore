@@ -1,7 +1,18 @@
+.DS_Store
+
+# deps
 node_modules
-.sass-cache
-NOTES.md
-yarn-error.log
+
+# environment
 .env
+
+# build
+.sass-cache
 dist/*.html
 dist/css/*.css
+
+# errors
+yarn-error.log
+
+# misc
+NOTES.md
